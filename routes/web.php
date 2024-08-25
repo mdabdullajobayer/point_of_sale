@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsCategoryController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,10 +34,17 @@ Route::post('verify-otp', [UserController::class, 'otpverify']);
 
 Route::group(['middleware' => ['user.login']], function () {
     Route::get('/home', [UserController::class, 'home']);
+    // User
     Route::get('user-profile', [UserController::class, 'UserProfileViews']);
-
     Route::post('reset-password', [UserController::class, 'resetpassword']);
-
     Route::get('userprofile', [UserController::class, 'UserProfile']);
     Route::post('update-profile', [UserController::class, 'UdateProfile']);
+    // Products Category 
+    Route::get('/products-category', [ProductsCategoryController::class, 'index']);
+    Route::get('/products-category-list', [ProductsCategoryController::class, 'list']);
+
+    Route::post('/products-category-create', [ProductsCategoryController::class, 'create']);
+    Route::post('/products-category-delete', [ProductsCategoryController::class, 'delete']);
+    Route::post('/category-by-id', [ProductsCategoryController::class, 'categorybyid']);
+    Route::post('/products-category-update', [ProductsCategoryController::class, 'update']);
 });

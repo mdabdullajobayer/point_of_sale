@@ -7,8 +7,8 @@ In this project, I am using Laravel and JavaScript, and I am implementing the Ag
 ## **Features List:**
 
   1. User Management
-  2. Products Management
-  3. Products Category Management 
+  2. Products Category Management 
+  3. Products Management
   4. Sale Management 
   5. Invoice Generating
   6. Business Report System 
@@ -25,3 +25,13 @@ In this project, I am using Laravel and JavaScript, and I am implementing the Ag
        - Allow user to get profile details (end point) 
        - Allow user to update profile details (end point)
   3. User Profile Front-End Development
+
+
+  ## **Step 02:**
+  1. Planning Products Category Table 
+  2. Products Category Back-End Development 
+      - User wise get all data (end point)
+      - User Delete Data (end point)
+      - User get indivisual data (end point)
+      - User Update Data (end point)
+  3.  Products Category Front-End Development

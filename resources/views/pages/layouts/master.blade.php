@@ -72,6 +72,15 @@
                     <a href="/user-profile"><i class="fa-solid fa-user"></i> Profile</a>
                 </li>
                 <li class="border-bottom">
+                    <a href="/user-profile"><i class="fa-solid fa-list"></i> Products</a>
+                </li>
+
+                <li class="border-bottom">
+                    <a href="/products-category"><i class="fa-solid fa-tag"></i> Product Category</a>
+                </li>
+
+
+                <li class="border-bottom">
                     <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
                 </li>
             </ul>
