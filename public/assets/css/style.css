@@ -112,3 +112,11 @@ button#dropdownMenu2 {
     border: none;
     background: #ffffff00;
 }
+
+td.dt-type-numeric {
+    text-align: left !important;
+}
+
+th.dt-type-numeric {
+    text-align: left !important;
+}

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
 
-    <title>Point of Sale | Home </title>
+    <title>Point of Sale | Dashboard </title>
 </head>
 
 <body class="bg-light">
@@ -70,6 +70,10 @@
 
                 <li class="border-bottom">
                     <a href="/user-profile"><i class="fa-solid fa-user"></i> Profile</a>
+                </li>
+
+                <li class="border-bottom">
+                    <a href="/customers"><i class="fa-solid fa-user"></i> Customers</a>
                 </li>
                 <li class="border-bottom">
                     <a href="/user-profile"><i class="fa-solid fa-list"></i> Products</a>

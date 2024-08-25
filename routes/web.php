@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProductsCategoryController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductsCategoryController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,12 +35,12 @@ Route::post('verify-otp', [UserController::class, 'otpverify']);
 
 Route::group(['middleware' => ['user.login']], function () {
     Route::get('/home', [UserController::class, 'home']);
-    // User
+    // User api
     Route::get('user-profile', [UserController::class, 'UserProfileViews']);
     Route::post('reset-password', [UserController::class, 'resetpassword']);
     Route::get('userprofile', [UserController::class, 'UserProfile']);
     Route::post('update-profile', [UserController::class, 'UdateProfile']);
-    // Products Category 
+    // Products Category API
     Route::get('/products-category', [ProductsCategoryController::class, 'index']);
     Route::get('/products-category-list', [ProductsCategoryController::class, 'list']);
 
@@ -47,4 +48,13 @@ Route::group(['middleware' => ['user.login']], function () {
     Route::post('/products-category-delete', [ProductsCategoryController::class, 'delete']);
     Route::post('/category-by-id', [ProductsCategoryController::class, 'categorybyid']);
     Route::post('/products-category-update', [ProductsCategoryController::class, 'update']);
+
+    // Customer API
+    Route::get('/customers', [CustomerController::class, 'index']);
+    Route::get('/customers-list', [CustomerController::class, 'list']);
+
+    Route::post('/customer-create', [CustomerController::class, 'create']);
+    Route::post('/customer-delete', [CustomerController::class, 'delete']);
+    Route::post('/customer-by-id', [CustomerController::class, 'customerbyid']);
+    Route::post('/customer-update', [CustomerController::class, 'update']);
 });
