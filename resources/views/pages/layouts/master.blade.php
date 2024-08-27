@@ -12,7 +12,10 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
-
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/axios.min.js') }}"></script>
+    <script src="{{ asset('assets/js/toastify.min.js') }}"></script>
     <title>Point of Sale | Dashboard </title>
 </head>
 
@@ -76,7 +79,7 @@
                     <a href="/customers"><i class="fa-solid fa-user"></i> Customers</a>
                 </li>
                 <li class="border-bottom">
-                    <a href="/user-profile"><i class="fa-solid fa-list"></i> Products</a>
+                    <a href="/products"><i class="fa-solid fa-list"></i> Products</a>
                 </li>
 
                 <li class="border-bottom">
@@ -96,10 +99,6 @@
         </div>
     </main>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/axios.min.js') }}"></script>
-    <script src="{{ asset('assets/js/toastify.min.js') }}"></script>
 
     <script>
         function successToast(msg) {

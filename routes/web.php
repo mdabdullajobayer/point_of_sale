@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductsCategoryController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -57,4 +58,13 @@ Route::group(['middleware' => ['user.login']], function () {
     Route::post('/customer-delete', [CustomerController::class, 'delete']);
     Route::post('/customer-by-id', [CustomerController::class, 'customerbyid']);
     Route::post('/customer-update', [CustomerController::class, 'update']);
+
+    // Products API
+    Route::get('/products', [ProductController::class, 'ProductsPage']);
+    Route::get('/products-list', [ProductController::class, 'ProductsList']);
+
+    Route::post('/products-create', [ProductController::class, 'ProductCreate']);
+    Route::post('/products-delete', [ProductController::class, 'DeleteProduct']);
+    Route::post('/products-by-id', [ProductController::class, 'ProductsById']);
+    Route::post('/products-update', [ProductController::class, 'ProductsUpdate']);
 });
