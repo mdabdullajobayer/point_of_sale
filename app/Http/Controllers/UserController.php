@@ -41,7 +41,7 @@ class UserController extends Controller
     }
     public function UserProfileViews(): View
     {
-        return view('pages.home.profile');
+        return view('pages.dashboard.profile');
     }
 
 

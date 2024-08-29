@@ -68,7 +68,7 @@
         <aside class="shadow sidebar" id="sidebar">
             <ul>
                 <li class="border-bottom">
-                    <a href="/home"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                    <a href="/dashboard"><i class="fa-solid fa-gauge"></i> Dashboard</a>
                 </li>
 
                 <li class="border-bottom">

@@ -62,7 +62,7 @@
                 if (res.status === 200 && res.data['status'] === 'success') {
                     successToast(res.data['massage'])
                     setTimeout(() => {
-                        window.location.href = '/home';
+                        window.location.href = '/dashboard';
                     }, 1000);
                     hideloader();
                 } else {

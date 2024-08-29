@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductsCategoryController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -36,11 +37,15 @@ Route::post('send-otp', [UserController::class, 'sentotp']);
 Route::post('verify-otp', [UserController::class, 'otpverify']);
 
 Route::group(['middleware' => ['user.login']], function () {
-    Route::get('/home', [UserController::class, 'home']);
+    // Dashboard Web Routes
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+    // Dashboard API Routes 
+    Route::get('/summary', [DashboardController::class, 'summary']);
 
-    // Users Profile API Routes
+    // Users Profile Web Routes
     Route::get('user-profile', [UserController::class, 'UserProfileViews']);
     Route::post('reset-password', [UserController::class, 'resetpassword']);
+    // Users Profile API Routes
     Route::get('userprofile', [UserController::class, 'UserProfile']);
     Route::post('update-profile', [UserController::class, 'UdateProfile']);
 
