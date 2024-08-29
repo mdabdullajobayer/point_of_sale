@@ -86,6 +86,10 @@
                     <a href="/products-category"><i class="fa-solid fa-tag"></i> Product Category</a>
                 </li>
 
+                <li class="border-bottom">
+                    <a href="/invoices"><i class="fa-solid fa-tag"></i> Invoices</a>
+                </li>
+
 
                 <li class="border-bottom">
                     <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>

@@ -120,3 +120,7 @@ td.dt-type-numeric {
 th.dt-type-numeric {
     text-align: left !important;
 }
+
+.billed p {
+    margin: 5px;
+}
