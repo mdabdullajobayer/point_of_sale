@@ -90,6 +90,9 @@
                     <a href="/invoices"><i class="fa-solid fa-tag"></i> Invoices</a>
                 </li>
 
+                <li class="border-bottom">
+                    <a href="/reports"><i class="fa-solid fa-list"></i> Reports</a>
+                </li>
 
                 <li class="border-bottom">
                     <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>

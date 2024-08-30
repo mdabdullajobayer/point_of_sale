@@ -6,6 +6,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -84,4 +85,8 @@ Route::group(['middleware' => ['user.login']], function () {
     Route::post('invoice-select', [InvoiceController::class, 'InvoiceSelect']);
     Route::post('invoice-details', [InvoiceController::class, 'InvoiceDetails']);
     Route::post('invoice-delete', [InvoiceController::class, 'InvoiceDelete']);
+
+    // Report Web Route 
+    Route::get('reports', [ReportController::class, 'ReportView']);
+    Route::get('reports/{formdate}/{todate}', [ReportController::class, 'Reports']);
 });
